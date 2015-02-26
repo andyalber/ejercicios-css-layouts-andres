@@ -1,0 +1,43 @@
+/*.importante{
+font-weight: 200;
+    
+}
+*/
+
+/*Lo podemos hacer con un selector adyacente*/
+p+p{
+    font-weight: 700;
+}
+
+ul{
+list-style: none;
+}
+
+li {
+    background-image: url(icons/external-link.png);
+    background-repeat: no-repeat;    
+}
+a{
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+a[href^=".http"]
+{
+    background-image: url(icons/external-link.png);
+}
+
+a[href^="#"]
+{
+    background-image: url(icons/zip-link.png);
+}
+
+a[href$=".zip"]
+{
+    background-image: url(icons/zip-link.png);
+}
+
+a[href$=".pdf"]
+{
+    background-image: url(icons/pdf-link.png);
+}
